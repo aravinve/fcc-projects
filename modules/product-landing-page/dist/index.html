@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Product Landing Page</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+
+<head>
+  <title>Cool Product Landing Page</title>
+</head>
+
+<body>
+  <header id="header">
+    <nav id="nav-bar" class="navbar navbar-expand-lg navbar-light bg-mybg">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#breadcrumb-div">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="breadcrumb-div">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-white active lead" href="#img-div">Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white lead" href="#subscribe"
+                >Subscribe</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white lead" href="#promo">Promo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white lead" href="#pricing">Price</a>
+          </li>
+        </ul>
+      </div>
+      <h2 id="header-div" class="display-4 p-2">The Athenaeum Point</h2>
+      <img id="header-img" class="rounded float-left" src="https://images.pexels.com/photos/1122865/pexels-photo-1122865.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="The Book Store Logo" />
+    </nav>
+  </header>
+  <main id="main">
+    <div id="img-div" class="jumbotron">
+      <h4 class="display-4 text-white">
+        Participate in the Readathon today !!
+      </h4>
+      <p class="blockquote text-white">
+        “A reader lives a thousand lives before he dies . . . The man who never reads lives only one.” <br /> – George R.R. Martin
+      </p>
+    </div>
+
+    <div id="subscribe" class="container">
+      <h4 class="lead text-center para-font">
+        Like to hear from us... Enroll Today!!!
+      </h4>
+      <form action="https://www.freecodecamp.com/email-submit" class="container" id="form">
+        <div class="form-group col-12">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" class="form-control" placeholder="Please Enter Your Email ...." required />
+        </div>
+        <div class="form-group col-3">
+          <input type="submit" id="submit" value="Subscribe" class="form-control btn bg-mybg text-dark" />
+        </div>
+      </form>
+    </div>
+    <br />
+    <h4 class="lead text-center para-font">Watch Now, The Exclusive!!!</h4>
+    <br />
+    <div class="iframe-bg" id="promo">
+      <br />
+      <div class="container">
+        <iframe id="video" class="iframe-div" width="1100" height="550" src="https://www.youtube.com/embed/SKVcQnyEIT8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <br />
+    </div>
+    <br />
+    <div class="row container-fluid m-0" id="pricing">
+      <div class="col-lg-4 col-md-6 col-sm-12 p-2">
+        <div class="card bg-mybg">
+          <div class="card-header text-center header-font font-weight-bold bg-light">
+            Silver
+          </div>
+          <div class="card-body text-justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eaque delectus consequatur dolore quasi, excepturi adipisci, alias placeat fugit inventore asperiores quibusdam neque modi doloribus nostrum ducimus labore debitis ipsum?
+          </div>
+          <div class="card-footer text-center footer-font font-weight-bold bg-light">
+            $5 / For 3 <i class="fas fa-book"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 p-2">
+        <div class="card bg-mybg">
+          <div class="card-header text-center header-font font-weight-bold bg-light">
+            Gold
+          </div>
+          <div class="card-body text-justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eaque delectus consequatur dolore quasi, excepturi adipisci, alias placeat fugit inventore asperiores quibusdam neque modi doloribus nostrum ducimus labore debitis ipsum?
+          </div>
+          <div class="card-footer text-center footer-font font-weight-bold bg-light">
+            $10 / For 8 <i class="fas fa-book"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 p-2">
+        <div class="card bg-mybg">
+          <div class="card-header text-center header-font font-weight-bold bg-light">
+            Platinum
+          </div>
+          <div class="card-body text-justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eaque delectus consequatur dolore quasi, excepturi adipisci, alias placeat fugit inventore asperiores quibusdam neque modi doloribus nostrum ducimus labore debitis ipsum?
+          </div>
+          <div class="card-footer text-center footer-font font-weight-bold bg-light">
+            $20 / For 15 <i class="fas fa-book"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+  </main>
+  <footer class="mt-4">
+    <div class="nav navbar bg-mybg">
+      <p class="lead">&copy; Copyrights Reserved 2019</p>
+    </div>
+  </footer>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/popper.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js'></script>
+
+</body>
+</html>

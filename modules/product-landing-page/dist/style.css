@@ -1,0 +1,57 @@
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+#main {
+  margin-top: 100px;
+}
+img {
+  height: 80px;
+  width: 100px;
+}
+#img-div {
+  background-image: url("https://images.pexels.com/photos/590493/pexels-photo-590493.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  opacity: 0.9;
+  border-radius: 0 !important;
+  display: flex;
+}
+.bg-mybg {
+  background-color: hsla(20, 35%, 60%, 1);
+}
+.iframe-bg {
+  background-image: repeating-linear-gradient(-45deg, hsl(20, 26%, 55%) 10%, #000 20%);
+}
+.iframe-div {
+  border-radius: 24px;
+  width: 100%;
+}
+li a {
+  cursor: pointer;
+}
+.para-font {
+  font-size: 1.8rem;
+}
+.header-font {
+  font-size: 1.5rem;
+}
+.footer-font {
+  font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 750px) {
+  h2 {
+    font-size: 2.5rem !important;
+  }
+  #main {
+    margin-top: 92px;
+  }
+  h4 {
+    font-size: 2rem !important;
+  }
+  p {
+    font-size: 1.2rem !important;
+  }
+}
