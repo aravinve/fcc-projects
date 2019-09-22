@@ -1,9 +1,16 @@
+body {
+  user-select: none;
+  -webkit-user-select: none;
+}
 #header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 2;
+}
+#header-img {
+  display: block;
 }
 #main {
   margin-top: 100px;
@@ -17,15 +24,16 @@ img {
   opacity: 0.9;
   border-radius: 0 !important;
   display: flex;
+  flex-direction: column;
 }
 .bg-mybg {
   background-color: hsla(20, 35%, 60%, 1);
 }
 .iframe-bg {
-  background-image: repeating-linear-gradient(-45deg, hsl(20, 26%, 55%) 10%, #000 20%);
+  background-color: hsla(20, 35%, 60%, 1);
 }
 .iframe-div {
-  border-radius: 24px;
+  padding: 16px;
   width: 100%;
 }
 li a {
@@ -46,12 +54,15 @@ li a {
     font-size: 2.5rem !important;
   }
   #main {
-    margin-top: 92px;
+    margin-top: 88px;
   }
   h4 {
     font-size: 2rem !important;
   }
   p {
     font-size: 1.2rem !important;
+  }
+  #header-img {
+    display: none;
   }
 }

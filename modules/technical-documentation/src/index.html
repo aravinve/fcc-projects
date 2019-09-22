@@ -1,121 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>The Best Tech Doc</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-</head>
-
-<body onresize="checkWidth()">
-  <nav id="navbar">
-    <a id="closebtn" class="closebtn" href="javascript:void(0)">&times;</a>
-    <header id="header"><i id="logo" class="fab fa-js-square"></i> JSON Documentation</header>
-    <li><a class="nav-link" href="#Introduction">Introduction</a></li>
-    <li><a class="nav-link" href="#Syntax">Syntax</a></li>
-    <li><a class="nav-link" href="#JSON_v/s_XML">JSON v/s XML</a></li>
-    <li><a class="nav-link" href="#Datatypes">Datatypes</a></li>
-    <li><a class="nav-link" href="#Parse">Parse</a></li>
-    <li><a class="nav-link" href="#Stringify">Stringify</a></li>
-    <li><a class="nav-link" href="#Objects">Objects</a></li>
-    <li><a class="nav-link" href="#Arrays">Arrays</a></li>
-    <li><a class="nav-link" href="#JSON_in_HTML">JSON in HTML</a></li>
-    <li><a class="nav-link" href="#Reference">Reference</a></li>
-  </nav>
-  <span id="menubtn" class="btn">&#9776;</span>
-  <main id="main-doc">
-    <section id="Introduction" class="main-section">
-      <header>
-        <h2>Introduction</h2>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Best Modern Tech Doc</title>
+    <link
+      rel="shortcut icon"
+      href="../../../img/favicon-16x16.png"
+      type="image/png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.11.1/css/all.css"
+      integrity="sha384-IT8OQ5/IfeLGe8ZMxjj3QQNqT0zhBJSiFCL3uolrGgKRuenIU+mMS94kck/AHZWu"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body onresize="checkWidth()">
+    <nav id="navbar">
+      <a id="closebtn" class="closebtn" href="javascript:void(0)">&times;</a>
+      <header id="header">
+        <i id="logo" class="fab fa-js-square"></i> JSON Documentation
       </header>
-      <div>
-        JSON: JavaScript Object Notation. JSON is a syntax for storing and exchanging data. JSON is text, written with JavaScript object notation.
-      </div>
-      <ul class="sp-list">
-        <li>JSON stands for JavaScript Object Notation</li>
-        <li>JSON is a lightweight data-interchange format</li>
-        <li>JSON is "self-describing" and easy to understand</li>
-        <li>JSON is language independent</li>
-      </ul>
-      <div class="sp-hint">
-        JSON uses JavaScript syntax, but the JSON format is text only. Text can be read and used as a data format by any programming language.
-        <br>The JSON format was originally specified by Douglas Crockford.
-      </div>
-      <h4>Why use JSON?</h4>
-      <p>
-        Since the JSON format is text only, it can easily be sent to and from a server, and used as a data format by any programming language.
-      </p>
-    </section>
-    <section id="Syntax" class="main-section">
-      <header>
-        <h2>Syntax</h2>
-      </header>
-      <h4>JSON Syntax Rules</h4>
-      <p>JSON syntax is derived from JavaScript object notation syntax:</p>
-      <ul class="sp-list">
-        <li>Data is in name/value pairs</li>
-        <li>Data is separated by commas</li>
-        <li>Curly braces hold objects</li>
-        <li>Square brackets hold arrays</li>
-      </ul>
-      <h4>JSON Data - A Name and a Value</h4>
-      <p>
-        JSON data is written as name/value pairs. A name/value pair consists of a field name (in double quotes), followed by a colon, followed by a value:
-      </p>
-      <div class="sp-code">
-        <code>
-                "name":"John"
-            </code>
-      </div>
-      <div class="sp-hint">
-        JSON names require double quotes. JavaScript names don't.
-      </div>
-      <h4>JSON - Evaluates to JavaScript Objects</h4>
-      <p>
-        The JSON format is almost identical to JavaScript objects. In JSON, keys must be strings, written with double quotes:
-      </p>
-      <div class="sp-code">
-        <div class="sp-code-header">JSON</div>
-        <code> { "name":"John" }</code>
-      </div>
-      <div class="sp-code">
-        <div class="sp-code-header">JavaScript</div>
-        <code> { name:"John" } </code>
-      </div>
-    </section>
-    <section id="JSON_v/s_XML" class="main-section">
-      <header>
-        <h2>JSON v/s XML</h2>
-      </header>
-      <p>Both JSON and XML can be used to receive data from a web server.</p>
-      <p>
-        The following JSON and XML examples both define an employees object, with an array of 3 employees:
-      </p>
-      <div class="sp-code">
-        <div class="sp-code-header">JSON Example</div>
-        <code class="codepretty">
-            {
-                "employees":[ 
-                    { 
-                        "firstName":"John", 
-                        "lastName":"Doe" 
-                    }, 
-                    {
-                        "firstName":"Anna", 
-                        "lastName":"Smith" 
-                    }, 
-                    { 
-                        "firstName":"Peter",
-                        "lastName":"Jones" 
-                    }]
-            }
-            </code>
-      </div>
-      <div class="sp-code">
-        <div class="sp-code-header">XML Example</div>
-        <textarea rows="14" cols="90" disabled>
+      <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+      <li><a class="nav-link" href="#Syntax">Syntax</a></li>
+      <li><a class="nav-link" href="#JSON_v/s_XML">JSON v/s XML</a></li>
+      <li><a class="nav-link" href="#Datatypes">Datatypes</a></li>
+      <li><a class="nav-link" href="#Parse">Parse</a></li>
+      <li><a class="nav-link" href="#Stringify">Stringify</a></li>
+      <li><a class="nav-link" href="#Objects">Objects</a></li>
+      <li><a class="nav-link" href="#Arrays">Arrays</a></li>
+      <li><a class="nav-link" href="#JSON_in_HTML">JSON in HTML</a></li>
+      <li><a class="nav-link" href="#Reference">Reference</a></li>
+    </nav>
+    <span id="menubtn" class="btn">&#9776;</span>
+    <main id="main-doc">
+      <section id="Introduction" class="main-section">
+        <header><h2>Introduction</h2></header>
+        <div>
+          JSON: JavaScript Object Notation. JSON is a syntax for storing and
+          exchanging data. JSON is text, written with JavaScript object
+          notation.
+        </div>
+        <ul class="sp-list">
+          <li>JSON stands for JavaScript Object Notation</li>
+          <li>JSON is a lightweight data-interchange format</li>
+          <li>JSON is "self-describing" and easy to understand</li>
+          <li>JSON is language independent</li>
+        </ul>
+        <div class="sp-hint">
+          JSON uses JavaScript syntax, but the JSON format is text only. Text
+          can be read and used as a data format by any programming language.
+          <br />The JSON format was originally specified by Douglas Crockford.
+        </div>
+        <h4>Why use JSON?</h4>
+        <p>
+          Since the JSON format is text only, it can easily be sent to and from
+          a server, and used as a data format by any programming language.
+        </p>
+      </section>
+      <section id="Syntax" class="main-section">
+        <header><h2>Syntax</h2></header>
+        <h4>JSON Syntax Rules</h4>
+        <p>JSON syntax is derived from JavaScript object notation syntax:</p>
+        <ul class="sp-list">
+          <li>Data is in name/value pairs</li>
+          <li>Data is separated by commas</li>
+          <li>Curly braces hold objects</li>
+          <li>Square brackets hold arrays</li>
+        </ul>
+        <h4>JSON Data - A Name and a Value</h4>
+        <p>
+          JSON data is written as name/value pairs. A name/value pair consists
+          of a field name (in double quotes), followed by a colon, followed by a
+          value:
+        </p>
+        <div class="sp-code">
+          <code>
+            "name":"John"
+          </code>
+        </div>
+        <div class="sp-hint">
+          JSON names require double quotes. JavaScript names don't.
+        </div>
+        <h4>JSON - Evaluates to JavaScript Objects</h4>
+        <p>
+          The JSON format is almost identical to JavaScript objects. In JSON,
+          keys must be strings, written with double quotes:
+        </p>
+        <div class="sp-code">
+          <div class="sp-code-header">JSON</div>
+          <code> { "name":"John" }</code>
+        </div>
+        <div class="sp-code">
+          <div class="sp-code-header">JavaScript</div>
+          <code> { name:"John" } </code>
+        </div>
+      </section>
+      <section id="JSON_v/s_XML" class="main-section">
+        <header><h2>JSON v/s XML</h2></header>
+        <p>Both JSON and XML can be used to receive data from a web server.</p>
+        <p>
+          The following JSON and XML examples both define an employees object,
+          with an array of 3 employees:
+        </p>
+        <div class="sp-code">
+          <div class="sp-code-header">JSON Example</div>
+          <code class="codepretty">
+            { "employees":[ { "firstName":"John", "lastName":"Doe" }, {
+            "firstName":"Anna", "lastName":"Smith" }, { "firstName":"Peter",
+            "lastName":"Jones" }] }
+          </code>
+        </div>
+        <div class="sp-code">
+          <div class="sp-code-header">XML Example</div>
+          <textarea rows="14" cols="50" disabled>
                 <employees>
                     <employee>
                         <firstName>John</firstName> 
@@ -131,261 +136,242 @@
                     </employee>
                 </employees>
           </textarea>
-      </div>
-      <h4>JSON is Like XML Because</h4>
-      <ul class="sp-list">
-        <li>Both JSON and XML are "self describing" (human readable)</li>
-        <li>Both JSON and XML are hierarchical (values within values)</li>
-        <li>
-          Both JSON and XML can be parsed and used by lots of programming languages
-        </li>
-        <li>Both JSON and XML can be fetched with an XMLHttpRequest</li>
-      </ul>
-      <h4>JSON is Unlike XML Because</h4>
-      <ul class="sp-list">
-        <li>JSON doesn't use end tag</li>
-        <li>JSON is shorter</li>
-        <li>JSON is quicker to read and write</li>
-        <li>JSON can use arrays</li>
-      </ul>
-      <p>
-        The biggest difference is: XML has to be parsed with an XML parser. JSON can be parsed by a standard JavaScript function.
-      </p>
-      <h4>Why JSON is Better Than XML</h4>
-      <div class="sp-hint">
-        XML is much more difficult to parse than JSON. JSON is parsed into a ready-to-use JavaScript object.
-      </div>
-      <p>For AJAX applications, JSON is faster and easier than XML:</p>
-      <p>Using XML</p>
-      <ul class="sp-list">
-        <li>Fetch an XML document</li>
-        <li>Use the XML DOM to loop through the document</li>
-        <li>Extract values and store in variables</li>
-      </ul>
-      <p>Using JSON</p>
-      <ul class="sp-list">
-        <li>Fetch a JSON string</li>
-        <li>JSON.Parse the JSON string</li>
-      </ul>
-    </section>
-    <section id="Datatypes" class="main-section">
-      <header>
-        <h2>Datatypes</h2>
-      </header>
-      <h4>Valid Data Types</h4>
-      <p>In JSON, values must be one of the following data types:</p>
-      <ul class="sp-list">
-        <li>a string</li>
-        <li>a number</li>
-        <li>an object (JSON object)</li>
-        <li>an array</li>
-        <li>a boolean</li>
-        <li>null</li>
-      </ul>
-      <div class="sp-hint">
-        JSON values cannot be one of the following data types: a function a date undefined
-      </div>
-      <div class="sp-code">
-        <div class="sp-code-header">JSON Strings</div>
-        <code>
+        </div>
+        <h4>JSON is Like XML Because</h4>
+        <ul class="sp-list">
+          <li>Both JSON and XML are "self describing" (human readable)</li>
+          <li>Both JSON and XML are hierarchical (values within values)</li>
+          <li>
+            Both JSON and XML can be parsed and used by lots of programming
+            languages
+          </li>
+          <li>Both JSON and XML can be fetched with an XMLHttpRequest</li>
+        </ul>
+        <h4>JSON is Unlike XML Because</h4>
+        <ul class="sp-list">
+          <li>JSON doesn't use end tag</li>
+          <li>JSON is shorter</li>
+          <li>JSON is quicker to read and write</li>
+          <li>JSON can use arrays</li>
+        </ul>
+        <p>
+          The biggest difference is: XML has to be parsed with an XML parser.
+          JSON can be parsed by a standard JavaScript function.
+        </p>
+        <h4>Why JSON is Better Than XML</h4>
+        <div class="sp-hint">
+          XML is much more difficult to parse than JSON. JSON is parsed into a
+          ready-to-use JavaScript object.
+        </div>
+        <p>For AJAX applications, JSON is faster and easier than XML:</p>
+        <p>Using XML</p>
+        <ul class="sp-list">
+          <li>Fetch an XML document</li>
+          <li>Use the XML DOM to loop through the document</li>
+          <li>Extract values and store in variables</li>
+        </ul>
+        <p>Using JSON</p>
+        <ul class="sp-list">
+          <li>Fetch a JSON string</li>
+          <li>JSON.Parse the JSON string</li>
+        </ul>
+      </section>
+      <section id="Datatypes" class="main-section">
+        <header><h2>Datatypes</h2></header>
+        <h4>Valid Data Types</h4>
+        <p>In JSON, values must be one of the following data types:</p>
+        <ul class="sp-list">
+          <li>a string</li>
+          <li>a number</li>
+          <li>an object (JSON object)</li>
+          <li>an array</li>
+          <li>a boolean</li>
+          <li>null</li>
+        </ul>
+        <div class="sp-hint">
+          JSON values cannot be one of the following data types: a function a
+          date undefined
+        </div>
+        <div class="sp-code">
+          <div class="sp-code-header">JSON Strings</div>
+          <code>
             { "name":"John" }
           </code>
-      </div>
-      <div class="sp-code">
-        <div class="sp-code-header">JSON Numbers</div>
-        <code>
+        </div>
+        <div class="sp-code">
+          <div class="sp-code-header">JSON Numbers</div>
+          <code>
             { "age":30 }
           </code>
-      </div>
-      <div class="sp-code">
-        <div class="sp-code-header">JSON Objects</div>
-        <code class="codepretty">
-            { 
-                "employee":
-                { 
-                    "name":"John", 
-                    "age":30, 
-                    "city":"New York" 
-                } 
-            }
+        </div>
+        <div class="sp-code">
+          <div class="sp-code-header">JSON Objects</div>
+          <code class="codepretty">
+            { "employee": { "name":"John", "age":30, "city":"New York" } }
           </code>
-      </div>
-      <div class="sp-code">
-        <div class="sp-code-header">JSON Arrays</div>
-        <code>
+        </div>
+        <div class="sp-code">
+          <div class="sp-code-header">JSON Arrays</div>
+          <code>
             { "employees":[ "John", "Anna", "Peter" ] }
           </code>
-      </div>
-      <div class="sp-code">
-        <div class="sp-code-header">JSON Booleans</div>
-        <code>
+        </div>
+        <div class="sp-code">
+          <div class="sp-code-header">JSON Booleans</div>
+          <code>
             { "sale":true }
           </code>
-      </div>
-      <div class="sp-code">
-        <div class="sp-code-header">JSON null</div>
-        <code>
+        </div>
+        <div class="sp-code">
+          <div class="sp-code-header">JSON null</div>
+          <code>
             { "middlename":null }
           </code>
-      </div>
-    </section>
-    <section id="Parse" class="main-section">
-      <header>
-        <h2>Parse</h2>
-      </header>
-      <p>
-        A common use of JSON is to exchange data to/from a web server. When receiving data from a web server, the data is always a string. Parse the data with JSON.parse(), and the data becomes a JavaScript object.
-      </p>
-      <div class="sp-code">
-        <div class="sp-code-header">Example - Parsing JSON</div>
-        <code>
-            var obj = JSON.parse('{ "name":"John", "age":30, "city":"NewYork"}');
+        </div>
+      </section>
+      <section id="Parse" class="main-section">
+        <header><h2>Parse</h2></header>
+        <p>
+          A common use of JSON is to exchange data to/from a web server. When
+          receiving data from a web server, the data is always a string. Parse
+          the data with JSON.parse(), and the data becomes a JavaScript object.
+        </p>
+        <div class="sp-code">
+          <div class="sp-code-header">Example - Parsing JSON</div>
+          <code>
+            var obj = JSON.parse('{ "name":"John", "age":30,
+            "city":"NewYork"}');
           </code>
-      </div>
-      <div class="sp-code">
-        <div class="sp-code-header">JSON From the Server</div>
-        <code class="codepretty">
-            var xmlhttp = new XMLHttpRequest(); 
-            xmlhttp.onreadystatechange = function() { 
-                if (this.readyState == 4 && this.status == 200) { 
-                    var myObj = JSON.parse(this.responseText);
-                    document.getElementById("demo").innerHTML = myObj.name; 
-                } 
-            };
-            xmlhttp.open("GET", "json_demo.txt", true); 
-            xmlhttp.send();
+        </div>
+        <div class="sp-code">
+          <div class="sp-code-header">JSON From the Server</div>
+          <code class="codepretty">
+            var xmlhttp = new XMLHttpRequest(); xmlhttp.onreadystatechange =
+            function() { if (this.readyState == 4 && this.status == 200) { var
+            myObj = JSON.parse(this.responseText);
+            document.getElementById("demo").innerHTML = myObj.name; } };
+            xmlhttp.open("GET", "json_demo.txt", true); xmlhttp.send();
           </code>
-      </div>
-      <div class="sp-error">
-        You should avoid using functions in JSON, the functions will lose their scope, and you would have to use eval() to convert them back into functions.
-      </div>
-    </section>
-    <section id="Stringify" class="main-section">
-      <header>
-        <h2>Stringify</h2>
-      </header>
-      <p>
-        A common use of JSON is to exchange data to/from a web server. When sending data to a web server, the data has to be a string. Convert a JavaScript object into a string with JSON.stringify().
-      </p>
-      <div class="sp-code">
-        <div class="sp-code-header">Stringify a JavaScript Object</div>
-        <code>
+        </div>
+        <div class="sp-error">
+          You should avoid using functions in JSON, the functions will lose
+          their scope, and you would have to use eval() to convert them back
+          into functions.
+        </div>
+      </section>
+      <section id="Stringify" class="main-section">
+        <header><h2>Stringify</h2></header>
+        <p>
+          A common use of JSON is to exchange data to/from a web server. When
+          sending data to a web server, the data has to be a string. Convert a
+          JavaScript object into a string with JSON.stringify().
+        </p>
+        <div class="sp-code">
+          <div class="sp-code-header">Stringify a JavaScript Object</div>
+          <code>
             var myJSON = JSON.stringify(obj);
           </code>
-      </div>
-      <div class="sp-hint">
-        The result will be a string following the JSON notation.
-      </div>
-      <div class="sp-error">
-        You should avoid using functions in JSON, the functions will lose their scope, and you would have to use eval() to convert them back into functions.
-      </div>
-    </section>
-    <section id="Objects" class="main-section">
-      <header>
-        <h2>Objects</h2>
-      </header>
-      <div class="sp-code">
-        <div class="sp-code-header">Object Syntax</div>
-        <code>
+        </div>
+        <div class="sp-hint">
+          The result will be a string following the JSON notation.
+        </div>
+        <div class="sp-error">
+          You should avoid using functions in JSON, the functions will lose
+          their scope, and you would have to use eval() to convert them back
+          into functions.
+        </div>
+      </section>
+      <section id="Objects" class="main-section">
+        <header><h2>Objects</h2></header>
+        <div class="sp-code">
+          <div class="sp-code-header">Object Syntax</div>
+          <code>
             { "name":"John", "age":30, "car":null }
           </code>
-      </div>
-      <p>
-        JSON objects are surrounded by curly braces {}. JSON objects are written in key/value pairs. Keys must be strings, and values must be a valid JSON data type (string, number, object, array, boolean or null). Keys and values are separated by a colon. Each
-        key/value pair is separated by a comma.
-      </p>
-      <div class="sp-code">
-        <div class="sp-code-header">Accessing Object Values</div>
-        <code>
-            myObj = { "name":"John", "age":30, "car":null }; <br>
+        </div>
+        <p>
+          JSON objects are surrounded by curly braces {}. JSON objects are
+          written in key/value pairs. Keys must be strings, and values must be a
+          valid JSON data type (string, number, object, array, boolean or null).
+          Keys and values are separated by a colon. Each key/value pair is
+          separated by a comma.
+        </p>
+        <div class="sp-code">
+          <div class="sp-code-header">Accessing Object Values</div>
+          <code>
+            myObj = { "name":"John", "age":30, "car":null }; <br />
             x = myObj.name;
           </code>
-        <code>
-            myObj = { "name":"John", "age":30, "car":null }; <br>
+          <code>
+            myObj = { "name":"John", "age":30, "car":null }; <br />
             x = myObj["name"];
           </code>
-      </div>
-      <div class="sp-code">
-        <div class="sp-code-header">Accessing Object Values</div>
-        <code class="codepretty">
-            myObj = { 
-                "name":"John", 
-                "age":30, 
-                "cars": { 
-                    "car1":"Ford",
-                    "car2":"BMW", 
-                    "car3":"Fiat" 
-                } 
-            }
+        </div>
+        <div class="sp-code">
+          <div class="sp-code-header">Accessing Object Values</div>
+          <code class="codepretty">
+            myObj = { "name":"John", "age":30, "cars": { "car1":"Ford",
+            "car2":"BMW", "car3":"Fiat" } }
           </code>
-      </div>
-    </section>
-    <section id="Arrays" class="main-section">
-      <header>
-        <h2>Arrays</h2>
-      </header>
-      <div class="sp-code">
-        <div class="sp-code-header">Arrays as JSON Objects</div>
-        <code>
+        </div>
+      </section>
+      <section id="Arrays" class="main-section">
+        <header><h2>Arrays</h2></header>
+        <div class="sp-code">
+          <div class="sp-code-header">Arrays as JSON Objects</div>
+          <code>
             [ "Ford", "BMW", "Fiat" ]
           </code>
-      </div>
-      <p>
-        Arrays in JSON are almost the same as arrays in JavaScript. In JSON, array values must be of type string, number, object, array, boolean or null. In JavaScript, array values can be all of the above, plus any other valid JavaScript expression, including
-        functions, dates, and undefined.
-      </p>
-      <div class="sp-code">
-        <div class="sp-code-header">Arrays in JSON Objects</div>
-        <code>
+        </div>
+        <p>
+          Arrays in JSON are almost the same as arrays in JavaScript. In JSON,
+          array values must be of type string, number, object, array, boolean or
+          null. In JavaScript, array values can be all of the above, plus any
+          other valid JavaScript expression, including functions, dates, and
+          undefined.
+        </p>
+        <div class="sp-code">
+          <div class="sp-code-header">Arrays in JSON Objects</div>
+          <code>
             { "name":"John", "age":30, "cars":[ "Ford", "BMW", "Fiat" ] }
           </code>
-      </div>
-      <div class="sp-code">
-        <div class="sp-code-header">Nested Arrays in JSON Objects</div>
-        <code class="codepretty">
-            myObj = { 
-                "name":"John", 
-                "age":30, 
-                "cars": [ 
-                { 
-                    "name":"Ford",
-                    "models":[ "Fiesta", "Focus", "Mustang" ] 
-                }, 
-                { 
-                    "name":"BMW",
-                    "models":[ "320", "X3", "X5" ] 
-                }, 
-                { 
-                    "name":"Fiat", 
-                    "models":[ "500", "Panda" ] 
-                }]
-            }
+        </div>
+        <div class="sp-code">
+          <div class="sp-code-header">Nested Arrays in JSON Objects</div>
+          <code class="codepretty">
+            myObj = { "name":"John", "age":30, "cars": [ { "name":"Ford",
+            "models":[ "Fiesta", "Focus", "Mustang" ] }, { "name":"BMW",
+            "models":[ "320", "X3", "X5" ] }, { "name":"Fiat", "models":[ "500",
+            "Panda" ] }] }
           </code>
-      </div>
-    </section>
-    <section id="JSON_in_HTML" class="main-section">
-      <header>
-        <h2>JSON in HTML</h2>
-      </header>
-      <p>
-        JSON can very easily be translated into JavaScript. JavaScript can be used to make HTML in your web pages.
-      </p>
-    </section>
-    <section id="Reference" class="main-section">
-      <header>
-        <h2>Reference</h2>
-      </header>
-      <p>All Documentation Belongs to W3Schools</p>
-      <p>
-        Visit
-        <a class="ref-link" href="https://www.w3schools.com/js/js_json_jsonp.asp"> here</a> to know more!
-      </p>
-    </section>
-    <button onclick="topFunction()" id="scrollupbtn" title="Go to top">
-      <i id="up" class="fas fa-level-up-alt"></i>
-    </button>
-  </main>
- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-</body>
-
+        </div>
+      </section>
+      <section id="JSON_in_HTML" class="main-section">
+        <header><h2>JSON in HTML</h2></header>
+        <p>
+          JSON can very easily be translated into JavaScript. JavaScript can be
+          used to make HTML in your web pages.
+        </p>
+      </section>
+      <section id="Reference" class="main-section">
+        <header><h2>Reference</h2></header>
+        <p>All Documentation Belongs to W3Schools</p>
+        <p>
+          Visit
+          <a
+            class="ref-link"
+            href="https://www.w3schools.com/js/js_json_intro.asp"
+            target="_blank"
+          >
+            here</a
+          >
+          to know more!
+        </p>
+      </section>
+      <button onclick="topFunction()" id="scrollupbtn" title="Go to top">
+        <i id="up" class="fas fa-level-up-alt"></i>
+      </button>
+    </main>
+    <script src="./script.js"></script>
+  </body>
 </html>

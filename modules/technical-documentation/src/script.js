@@ -14,11 +14,16 @@ window.onscroll = function() {
     scrollupbtn.style.display = "none";
   }
 };
-closebtn.addEventListener("click", function() {
+closebtn.addEventListener("click", closeUp);
+const links = Array.from(document.getElementsByClassName("nav-link"));
+links.forEach(element => {
+  element.addEventListener("click", closeUp);
+});
+function closeUp() {
   navbar.style.width = "0px";
   maindoc.style.marginLeft = "0px";
   isSideNavOpen = false;
-});
+}
 menubtn.addEventListener("click", function() {
   isSideNavOpen = true;
   checkWidth();

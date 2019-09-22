@@ -4,9 +4,6 @@ body {
   line-height: 1.5;
   overflow-x: hidden;
 }
-#logo{
-  color: #F6BD60;
-}
 #header {
   color: #ffffff;
   display: block;
@@ -49,7 +46,6 @@ body {
   margin-left: 250px;
   background-color: #ffffff;
   padding: 0 24px 16px 24px;
-  transition: 0.7s;
 }
 .main-section {
   background-color: inherit;
@@ -99,8 +95,6 @@ textarea {
   margin: 12px;
   cursor: pointer;
   font-weight: bolder;
-  position: relative;
-  top: 32px;
 }
 
 #closebtn {
@@ -126,14 +120,18 @@ textarea {
   border-radius: 8px;
 }
 
-#up{
-  font-size: 2em;
-}
-
 #scrollupbtn::after {
   font-size: 2em;
   color: #222222;
   font-weight: bold;
+}
+
+#logo {
+  color: #f6bd60;
+}
+
+#up {
+  font-size: 2em;
 }
 
 @media only screen and (max-width: 750px) {
@@ -141,5 +139,11 @@ textarea {
     height: 100%;
     width: 100%;
     text-align: center;
+  }
+  .sp-code {
+    font-size: 14px;
+  }
+  textarea {
+    font-size: 12px;
   }
 }
