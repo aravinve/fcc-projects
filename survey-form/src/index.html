@@ -1,0 +1,72 @@
+<html>
+
+<head>
+  <title>The Survey Form</title>
+</head>
+
+<body>
+  <main id="main">
+    <div>
+      <h1 id="title">Foodz - Survey Form</h1>
+    </div>
+    <div id="form-div">
+      <p id="description">Let us know how can we improvise our food chain service</p>
+      <form id="survey-form" action="">
+        <div id="name-div">
+          <label id="name-label" for="name">Name<sup>*</sup>:</label><br>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required/>
+        </div>
+        <br>
+        <div id="email-div">
+          <label id="email-label" for="email">Email<sup>*</sup>:</label><br>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required/>
+        </div>
+        <br>
+        <div id="age-div">
+          <label id="number-label" for="age">Age:</label><br>
+          <input type="number" id="number" name="number" placeholder="Enter your age" min="10" max="60" />
+        </div>
+        <br>
+        <div id="radio-div">
+          <label id="gender-label">Gender<sup>*</sup>:</label><br><br>
+          <input type="radio" id="gender1" name="gender" value="male">
+          <label id="gender1" for="gender1">Male</label> <br>
+          <input  type="radio" id="gender2" name="gender" value="female">
+          <label id="gender1" for="gender2">Female</label> <br>
+          <input type="radio" id="gender3" name="gender" value="other">
+          <label id="gender1" for="gender3">Other</label><br>
+        </div>
+        <br>
+        <div id="option-div">
+          <label id="select-label" for="dropdown">Favorite Recipe<sup>*</sup>:</label>
+          <select id="dropdown" name="dropdown">
+            <option>Noodles</option>
+            <option>Rice Bowl</option>
+            <option>Pizza</option>
+            <option>Ice cream</option>
+          </select>
+        </div>
+        <br>
+        <div id="checkbox-div">
+          <label for="checkbox" id="check-label">Which payment method you prefer?<sup>*</sup></label>
+          <br><br>
+          <input type="checkbox" name="pay1" value="pay1">Net Banking <br>
+          <input type="checkbox" name="pay2" value="pay2">UPI <br>
+          <input type="checkbox" name="pay3" value="pay3">Cash on Delivery<br>
+        </div>
+        <br>
+        <div id="textarea-div">
+          <label for="textarea">Comments: </label><br><br>
+          <textarea id="textarea" name="message" placeholder="Enter your message here ..." cols="50" rows="1"></textarea>
+        </div>
+        <br>
+        <div id="submit-div">
+          <button id="submit" name="submit">Submit</button>
+        </div>
+      </form>
+  </main>
+  </div>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
