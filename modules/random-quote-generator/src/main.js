@@ -4,7 +4,7 @@ generateRandomData = (arr) => {
 
 const newQuoteBtn = document.querySelector("#new-quote");
 const tweetQuoteBtn = document.querySelector("#tweet-quote");
-const fbQuoteBtn = document.querySelector("#fb-quote");
+const tumblrQuoteBtn = document.querySelector("#tumblr-quote");
 const quoteTextArea = document.getElementsByClassName("quote-text")[0];
 const quoteAuthorArea = document.getElementsByClassName("quote-author")[0];
 const colors = ["#011627", "#2364AA", "#44AF69", "#E71D36", "#FF9F1C"];
@@ -26,14 +26,16 @@ function generateNewQuote() {
         const quote = generateRandomData(quoteDataArray);
         quoteTextArea.innerHTML = quote.text;
         quoteAuthorArea.innerHTML = "- " + quote.author;
-        const hrefString = `https://twitter.com/intent/tweet?hashtags=quotes&related=R@ndomQUote&text=${quote.text} ${quote.author}`;
-        tweetQuoteBtn.setAttribute("href", hrefString);
+        const twitterString = `https://twitter.com/intent/tweet?hashtags=quotes,R@ndomQUote&related=R@ndomQUote&text=${quote.text} ${quote.author}`;
+        const tumblrString = `https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=R@ndomQUote,quotes&caption=${quote.author}&content=${quote.text}&canonicalUrl=https%3A%2F%2Fwww.tumblr.com%2Fbuttons&shareSource=tumblr_share_button`;
+        tweetQuoteBtn.setAttribute("href", twitterString);
+        tumblrQuoteBtn.setAttribute("href", tumblrString);
     }
     const color = generateRandomData(colors);
     document.querySelector("body").style.backgroundColor = color;
     newQuoteBtn.style.backgroundColor = color;
     tweetQuoteBtn.style.color = color;
-    fbQuoteBtn.style.color = color;
+    tumblrQuoteBtn.style.color = color;
 }
 
 function fetchQuoteData(){
