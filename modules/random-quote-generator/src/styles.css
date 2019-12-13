@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited, a:focus{
+    text-decoration: none;
+}
+
+.mr{
+    margin-right: 0.5rem;
+}
+
+.ml{
+    margin-left: 0.5rem;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    height: 100%;
+    margin: 2rem auto;
+    width: 60%;
+    font-size: 4rem;
+}
+
+.quote-box{
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    height: 100%;
+    margin: auto;
+    width: 60%;
+    border: 2px solid #000000;
+    border-radius: 4px;
+}
+
+#text{
+    padding: 2rem;
+}
+
+.quote-text{
+    font-size: 2rem;
+    text-align: left;
+}
+
+#author{
+    padding: 1rem;
+}
+
+.quote-author{
+    font-size: 1.7rem;
+    text-align: right;
+}
+
+#footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+}
+
+#left{
+    text-align: left;
+}
+
+#right{
+    text-align: right;
+}
+
+.share-icons{
+    font-size: 2.5rem;
+}
+
+#new-quote{
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #ffffff;
+}
